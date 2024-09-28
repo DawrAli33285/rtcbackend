@@ -32,7 +32,7 @@ socket.on('conn-init',(data)=>{
    let newdata={
     connUserId:socket.id
    }
-  console.log("Conn init")
+  console.log("Conn init new")
   console.log(data)
   console.log(newdata)
  io.to(data.connUserId).emit('conn-init',newdata)
